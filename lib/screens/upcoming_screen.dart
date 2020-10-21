@@ -30,12 +30,12 @@ class _UpcomingScreenState extends State<UpcomingScreen> {
                       Text(
                         "Indian Premier League 2020",
                         style: TextStyle(
-                            fontWeight: FontWeight.w400, fontSize: 14),
+                            fontWeight: FontWeight.w400,fontFamily: 'SF', fontSize: 14),
                       ),
                       Spacer(),
                       Text(
                         "2h 41m",
-                        style: TextStyle(color: Colors.red[600]),
+                        style: TextStyle(fontFamily: 'SF',color: Colors.red[600]),
                       )
                     ],
                   ),
@@ -46,58 +46,43 @@ class _UpcomingScreenState extends State<UpcomingScreen> {
                 Padding(
                   padding: const EdgeInsets.only(
                       left: 12, top: 7, bottom: 9, right: 12),
-                  child: Row(
-                    children: <Widget>[
-                      Container(
-                          child: CircleAvatar(
-                              radius: 25,
-                              backgroundImage: AssetImage(
-                                "assets/img/dc.png",
-                              ))),
-                      Padding(
-                        padding: EdgeInsets.only(left: 15),
-                        child: Text(
-                          "DC",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 18),
-                        ),
-                      ),
-                      Spacer(),
-                      Text(""),
-                      Text("")
-                    ],
-                  ),
+                  child: _buildMatchRowLine(
+                      image: "assets/img/dc.png", title: "DC"),
                 ),
                 Padding(
                   padding:
                       const EdgeInsets.only(left: 12, bottom: 16, right: 12),
-                  child: Row(
-                    children: <Widget>[
-                      Container(
-                          child: CircleAvatar(
-                              radius: 25,
-                              backgroundImage: AssetImage(
-                                "assets/img/kkr.png",
-                              ))),
-                      Padding(
-                        padding: EdgeInsets.only(left: 15),
-                        child: Text(
-                          "KRR",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 18),
-                        ),
-                      ),
-                      Spacer(),
-                      Text(""),
-                      Text("")
-                    ],
-                  ),
+                  child: _buildMatchRowLine(
+                      image: "assets/img/kkr.png", title: "KRR"),
                 ),
               ],
             ),
           ),
         ],
       ),
+    );
+  }
+
+  _buildMatchRowLine({var image, String title}) {
+    return Row(
+      children: <Widget>[
+        Container(
+            child: CircleAvatar(
+                radius: 19,
+                backgroundImage: AssetImage(
+                  image,
+                ))),
+        Padding(
+          padding: EdgeInsets.only(left: 15),
+          child: Text(
+            title,
+            style: TextStyle(fontFamily: 'SF',fontWeight: FontWeight.bold, fontSize: 18),
+          ),
+        ),
+        Spacer(),
+        Text(""),
+        Text("")
+      ],
     );
   }
 }

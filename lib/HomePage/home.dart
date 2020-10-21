@@ -25,13 +25,17 @@ class _HomeScreenState extends State<HomeScreen> {
         length: 3,
         child: Scaffold(
           appBar: AppBar(
+            elevation: 0,
             bottom: TabBar(
+              physics: BouncingScrollPhysics(),
               indicator: MD2Indicator(
                 indicatorSize: MD2IndicatorSize.full,
                 indicatorHeight: 4.0,
                 indicatorColor: Colors.blue,
+
+
               ),
-              indicatorSize: TabBarIndicatorSize.tab,
+              indicatorSize: TabBarIndicatorSize.label,
               labelColor: Colors.blue,
               labelStyle: TextStyle(fontSize: 16),
               unselectedLabelStyle: TextStyle(fontSize: 14),
@@ -40,8 +44,12 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             backgroundColor: Colors.white,
             title: Text(
-              "Home",
-              style: TextStyle(color: Colors.black),
+              "  Home",
+              style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24,
+                  letterSpacing: 0.25),
             ),
           ),
           body: TabBarView(children: [

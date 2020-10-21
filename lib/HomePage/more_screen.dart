@@ -13,11 +13,11 @@ class _MoreScreenState extends State<MoreScreen> {
         backgroundColor: Colors.white,
         elevation: 0,
         title: Text(
-          "More",
+          " More",
           style: TextStyle(
             color: Colors.black,
             fontWeight: FontWeight.bold,
-            fontSize: 22,
+            fontSize: 24,
             letterSpacing: 0.25,
           ),
         ),

@@ -1,6 +1,7 @@
 // import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:scorebaazar/HomePage/home.dart';
 import 'package:scorebaazar/HomePage/more_screen.dart';
 
@@ -40,31 +41,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: tabs[_currentIndex],
-
-      // bottomNavigationBar: BottomNavigationBar(
-      //   currentIndex: _currentIndex,
-      //   // backgroundColor: Colors.white,
-
-      //   type: BottomNavigationBarType.shifting,
-      //   items: [
-      //     buildBottomNavigationBarItem(
-      //         icon: Icons.settings_input_composite, title: "Caclculator"),
-      //     buildBottomNavigationBarItem(
-      //       icon: Icons.home,
-      //       title: "Home",
-      //     ),
-      //     buildBottomNavigationBarItem(icon: Icons.more_horiz, title: "More"),
-      //   ],
-      //   onTap: (index) {
-      //     setState(() {
-      //       _currentIndex = index;
-      //     });
-      //   },
-      // ),
-
       bottomNavigationBar: CurvedNavigationBar(
-        // backgroundColor: Colors.blueAccent,
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xfffffafa),
         color: Colors.blue,
         buttonBackgroundColor: Colors.blue,
         animationDuration: Duration(
@@ -73,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
         height: 50.0,
         items: <Widget>[
           Icon(
-            Icons.settings_input_composite,
+            MdiIcons.calculator,
             size: 25,
             color: Colors.white,
           ),

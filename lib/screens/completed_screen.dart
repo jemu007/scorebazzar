@@ -50,7 +50,7 @@ class _CompletedScreenState extends State<CompletedScreen> {
                     children: <Widget>[
                       Container(
                           child: CircleAvatar(
-                              radius: 25,
+                              radius: 19,
                               backgroundImage: AssetImage(
                                 "assets/img/srh.png",
                               ))),
@@ -75,7 +75,7 @@ class _CompletedScreenState extends State<CompletedScreen> {
                       Container(
                           child: CircleAvatar(
                               backgroundColor: Colors.black,
-                              radius: 25,
+                              radius: 19,
                               backgroundImage: AssetImage(
                                 "assets/img/csk.png",
                               ))),

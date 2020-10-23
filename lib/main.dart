@@ -2,6 +2,7 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:scorebaazar/HomePage/calculator.dart';
 import 'package:scorebaazar/HomePage/home.dart';
 import 'package:scorebaazar/HomePage/more_screen.dart';
 
@@ -32,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   final tabs = [
-    Center(child: Text("Calculator")),
+    CalculatorScreen(),
     HomeScreen(),
     MoreScreen(),
   ];

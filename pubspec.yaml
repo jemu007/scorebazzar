@@ -68,6 +68,7 @@ flutter:
      fonts:
        - asset: fonts/SF-Pro-Display-Medium.ttf
        - asset: fonts/SF-Pro-Display-Regular.ttf
+       - asset: fonts/sf-ui-display-bold.ttf
          weight: 300
   #
   # For details regarding fonts from package dependencies,

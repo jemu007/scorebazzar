@@ -31,22 +31,22 @@ class _HomeScreenState extends State<HomeScreen> {
               indicator: MD2Indicator(
                 indicatorSize: MD2IndicatorSize.full,
                 indicatorHeight: 4.0,
-                indicatorColor: Colors.blue,
+                indicatorColor: Colors.white,
 
 
               ),
               indicatorSize: TabBarIndicatorSize.label,
-              labelColor: Colors.blue,
+              labelColor: Colors.white,
               labelStyle: TextStyle(fontSize: 16),
-              unselectedLabelStyle: TextStyle(fontSize: 14),
-              unselectedLabelColor: Colors.black,
+              unselectedLabelStyle: TextStyle(fontSize: 16),
+              unselectedLabelColor: Colors.white60,
               tabs: list,
             ),
-            backgroundColor: Colors.white,
+            backgroundColor: Colors.blue[400],
             title: Text(
               "  Home",
               style: TextStyle(
-                  color: Colors.black,
+                  color: Colors.white,
                   fontWeight: FontWeight.bold,
                   fontSize: 24,
                   letterSpacing: 0.25),
